@@ -1,7 +1,12 @@
 :root {
-  /* default theme color */
-  /* can be overrided by uses `themeConfig` option */
   --slidev-theme-primary: #5d8392;
+  --kalouk-light-blue: #00C0F3;
+  --kalouk-blue: #005DA4;
+  --kalouk-yellow: #FFE06A;
+  --kalouk-yellow-dark: #FDB912;
+  --kalouk-orange: #F37021;
+  --kalouk-green: #6DC067;
+  --kalouk-green-dark: #008641;
 }
 
 .slidev-layout.cover,
@@ -9,16 +14,16 @@
   @apply h-full grid;
 
   h1 {
-    @apply text-6xl leading-20;
+    @apply text-8xl font-800 leading-20;
   }
 
-  h1 + p {
+  h1+p {
     @apply -mt-2 opacity-50 mb-4;
   }
 
-  p + h2,
-  ul + h2,
-  table + h2 {
+  p+h2,
+  ul+h2,
+  table+h2 {
     @apply mt-10;
   }
 }
