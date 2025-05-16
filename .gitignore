@@ -1,0 +1,66 @@
+# Slidev
+.slidev/
+dist/
+exports/
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Nuxt & Vue
+.nuxt/
+.output/
+.nitro/
+.cache/
+.vite/
+.temp/
+.vite-inspect
+.remote-assets
+
+# Build files
+*.log
+.DS_Store
+Thumbs.db
+coverage/
+*.local
+
+# dotenv environment variables file
+.env
+.env.*
+!.env.example
+
+# Editor directories and files
+.idea/
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.project
+.classpath
+*.sublime-workspace
+components.d.ts
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~.nib
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Log files
+logs/
+*.log
+npm-debug.log*
