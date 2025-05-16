@@ -26,9 +26,10 @@
     "colorSchema": "both",
     "defaults": {
       "fonts": {
-        "sans": "Nunito Sans",
-        "mono": "Fira Code"
-      }
+        "sans": "Roboto",
+        "mono": "Roboto Mono"
+      },
+      "aspectRatio": "16:9"
     }
   }
 }
