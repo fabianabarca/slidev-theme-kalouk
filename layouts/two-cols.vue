@@ -35,10 +35,10 @@ const props = defineProps({
     class="slidev-layout two-columns w-full h-full grid grid-cols-2"
     :class="props.layoutClass"
   >
-    <div class="col-left" :class="props.class">
+    <div class="col-left mr-3" :class="props.class">
       <slot />
     </div>
-    <div class="col-right" :class="props.class">
+    <div class="col-right ml-3" :class="props.class">
       <slot name="right" />
     </div>
   </div>

@@ -41,13 +41,13 @@ const props = defineProps({
     <div class="col-header">
       <slot />
     </div>
-    <div class="col-left" :class="props.class">
+    <div class="col-left mr-3" :class="props.class">
       <slot name="left" />
     </div>
-    <div class="col-right" :class="props.class">
+    <div class="col-right ml-3" :class="props.class">
       <slot name="right" />
     </div>
-    <div class="col-bottom" :class="props.class">
+    <div class="col-bottom text-center" :class="props.class">
       <slot name="bottom" />
     </div>
   </div>

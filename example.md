@@ -119,7 +119,7 @@ This shows on the left
 This shows on the right
 
 ---
-layout: two-cols-header
+layout: two-cols-header 
 ---
 
 # This spans both
