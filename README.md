@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/slidev-theme-kalouk?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-kalouk)
 
-A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
+A [Kalouk](https://kalouk.xyz/) theme for [Slidev](https://github.com/slidevjs/slidev).
 
 <!--
   Learn more about how to write a theme:
@@ -21,7 +21,7 @@ A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
 
 ## Install
 
-Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
+Add the following frontmatter to your `slides.md`. Start Slidev and it will prompt you to install the theme automatically.
 
 <pre><code>---
 theme: <b>kalouk</b>
@@ -31,15 +31,17 @@ Learn more about [how to use a theme](https://sli.dev/guide/theme-addon#use-them
 
 ## Layouts
 
-This theme provides the following layouts:
+This theme provides all built-in layouts from Slidev, plus the following ones:
 
-> TODO:
+### Equation
+
+![Equation Layout](/example-export/9.png)
 
 ## Components
 
 This theme provides the following components:
 
-> TODO:
+> TODO: the "plus info" button component
 
 ## Contributing
 
