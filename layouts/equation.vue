@@ -46,12 +46,10 @@ const props = defineProps({
   gap: 1rem;
 }
 
-/* First row */
 .row-header {
   grid-row: 1;
 }
 
-/* Second row (fills available vertical space) */
 .row-equation {
   grid-row: 2;
   display: flex;
@@ -59,7 +57,6 @@ const props = defineProps({
   justify-content: center;
 }
 
-/* Third row (stays at bottom of the component) */
 .row-bottom {
   grid-row: 3;
   align-self: end;
