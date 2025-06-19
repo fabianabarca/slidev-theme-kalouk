@@ -12,10 +12,56 @@ $$
 ```
 -->
 
+<script setup lang="ts">
+const props = defineProps({
+  class: {
+    type: String,
+  },
+  layoutClass: {
+    type: String,
+  },
+});
+</script>
+
 <template>
-  <div class="slidev-layout equation">
-    <div class="my-auto mx-auto">
+  <div class="slidev-layout equation layout w-full h-full" :class="layoutClass">
+    <div class="row-header">
       <slot />
+    </div>
+    <div class="row-equation mr-2" :class="props.class">
+      <slot name="equation" />
+    </div>
+    <div class="row-bottom text-center" :class="props.class">
+      <slot name="bottom" />
     </div>
   </div>
 </template>
+
+<style scoped>
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  gap: 1rem;
+}
+
+/* First row */
+.row-header {
+  grid-row: 1;
+}
+
+/* Second row (fills available vertical space) */
+.row-equation {
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Third row (stays at bottom of the component) */
+.row-bottom {
+  grid-row: 3;
+  align-self: end;
+}
+</style>

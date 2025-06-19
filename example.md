@@ -92,9 +92,17 @@ Showing an equation in its full glory with an extra big font. The definition of 
 layout: equation
 ---
 
+# Title
+
+::equation::
+
 $$
 E = mc^2
 $$
+
+::bottom::
+
+$E$ is the energy, $m$ is the mass, and $c$ is the speed of light.
 
 ---
 layout: two-cols
@@ -114,14 +122,22 @@ This shows on the right
 layout: two-cols-header
 ---
 
-This spans both
+# This spans both
+
 ::left::
+
 # Left
+
 This shows on the left
+
 ::right::
+
 # Right
+
 This shows on the right
+
 ::bottom::
+
 This shows at the bottom, aligned to the end (bottom) of the grid
 
 ---
