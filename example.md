@@ -2,15 +2,9 @@
 theme: ./
 ---
 
-# Slidev Theme Starter
+# Kalouk
 
-Presentation slides for developers
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" flex="~ justify-center items-center gap-2" hover="bg-white bg-opacity-10">
-    Press Space for next page <div class="i-carbon:arrow-right inline-block"/>
-  </span>
-</div>
+Presentation slides with some niceties for math and programming
 
 ---
 
@@ -69,6 +63,66 @@ function updateUser(id: number, update: Partial<User>) {
   saveUser(id, newUser)
 }
 ```
+
+---
+layout: section
+---
+
+# Layouts
+
+---
+
+# Layouts
+
+Kalouk's layouts use the magic of Naive UI to enable new components and styles, like cards and grids.
+
+---
+
+## Grid
+
+Hola
+
+---
+
+# Equation
+
+Showing an equation in its full glory with an extra big font. The definition of the variables is available through a special notation.
+
+---
+layout: equation
+---
+
+$$
+E = mc^2
+$$
+
+---
+layout: two-cols
+---
+
+# Left
+
+This shows on the left
+
+::right::
+
+# Right
+
+This shows on the right
+
+---
+layout: two-cols-header
+---
+
+This spans both
+::left::
+# Left
+This shows on the left
+::right::
+# Right
+This shows on the right
+::bottom::
+This shows at the bottom, aligned to the end (bottom) of the grid
 
 ---
 layout: center
