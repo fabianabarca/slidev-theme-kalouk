@@ -2,10 +2,25 @@
   "name": "slidev-theme-kalouk",
   "version": "0.1.0",
   "type": "module",
+  "description": "Kalouk theme for Slidev",
+  "homepage": "https://github.com/fabianabarca/kalouk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabianabarca/kalouk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fabianabarca/kalouk/issues"
+  },
   "keywords": [
     "slidev-theme",
     "slidev"
   ],
+  "author": {
+    "name": "Fabián Abarca",
+    "email": "fabian.abarca@ucr.ac.cr",
+    "url": "https://github.com/fabianabarca"
+  },
+  "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
   },
@@ -23,7 +38,6 @@
     "@slidev/cli": "^51.6.2",
     "playwright-chromium": "^1.53.1"
   },
-  "//": "Learn more: https://sli.dev/guide/write-theme.html",
   "slidev": {
     "colorSchema": "both",
     "defaults": {
