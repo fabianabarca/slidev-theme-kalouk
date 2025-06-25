@@ -2,6 +2,7 @@
 .slidev/
 dist/
 exports/
+example-export/
 
 # Node.js dependencies
 node_modules/
