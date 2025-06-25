@@ -9,6 +9,29 @@
   --kalouk-green-dark: #008641;
 }
 
+/* Kalouk Layouts */
+
+.slidev-layout.equation {
+  @apply h-full grid;
+}
+
+.slidev-layout.equation .katex-display {
+  font-size: 3rem;
+}
+
+.slidev-layout.quiz {
+  @apply h-full grid;
+}
+
+.slidev-layout.subsection {
+  @apply text-center grid h-full;
+  h1 {
+    @apply text-5xl font-700 leading-20;
+  }
+}
+
+/* Slidev Layouts (refined) */
+
 .slidev-layout.cover {
   @apply h-full grid;
   background-color: var(--kalouk-blue);
@@ -51,21 +74,6 @@
   h1 {
     @apply text-8xl font-800 leading-20;
   }
-}
-
-.slidev-layout.subsection {
-  @apply text-center grid h-full;
-  h1 {
-    @apply text-5xl font-700 leading-20;
-  }
-}
-
-.slidev-layout.equation {
-  @apply h-full grid;
-}
-
-.slidev-layout.equation .katex-display {
-  font-size: 3rem;
 }
 
 .slidev-layout.fact {
