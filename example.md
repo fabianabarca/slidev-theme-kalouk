@@ -83,6 +83,12 @@ Kalouk's layouts use the magic of Naive UI to enable new components and styles, 
 Hola
 
 ---
+layout: subsection
+---
+
+# Equation
+
+---
 
 # Equation
 

@@ -53,6 +53,13 @@
   }
 }
 
+.slidev-layout.subsection {
+  @apply text-center grid h-full;
+  h1 {
+    @apply text-5xl font-700 leading-20;
+  }
+}
+
 .slidev-layout.equation {
   @apply h-full grid;
 }
