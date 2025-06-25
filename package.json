@@ -31,8 +31,10 @@
     "screenshot": "slidev export example.md --format png"
   },
   "dependencies": {
+    "@primeuix/themes": "^1.1.2",
     "@slidev/types": "^51.6.2",
-    "naive-ui": "^2.42.0"
+    "primeicons": "^7.0.0",
+    "primevue": "^4.3.5"
   },
   "devDependencies": {
     "@slidev/cli": "^51.6.2",
