@@ -86,7 +86,18 @@ Hola
 layout: subsection
 ---
 
-# Equation
+# Kalouk Layouts
+
+---
+
+Kalouk provides a set of layouts specially suited for teaching and learning, with a focus on math and programming.
+
+- Equations
+- Quizzes
+- Steps
+- Code
+- Plot
+
 
 ---
 
@@ -94,11 +105,27 @@ layout: subsection
 
 Showing an equation in its full glory with an extra big font. The definition of the variables is available through a special notation.
 
+```md 
 ---
 layout: equation
 ---
 
-# Title
+# Title of the Equation
+
+::equation::
+
+E = mc^2
+
+::bottom::
+
+$E$ is the energy, $m$ is the mass, and $c$ is the speed of light.
+```
+
+---
+layout: equation
+---
+
+# Title of the Equation
 
 ::equation::
 
@@ -109,6 +136,133 @@ $$
 ::bottom::
 
 $E$ is the energy, $m$ is the mass, and $c$ is the speed of light.
+
+---
+
+# Quiz
+
+Test your readers with a quiz.
+
+```md
+---
+layout: quiz
+---
+
+# Title of the Quiz
+
+::statement::
+
+Statement of the quiz
+
+::options::
+
+- Option A
+- Option B [x]
+- Option C
+```
+
+---
+layout: quiz
+---
+
+# Title of the Quiz
+
+::statement::
+
+Statement of the quiz
+
+$$
+x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+::options::
+
+- Option A
+- [x] Option B
+- Option C
+
+---
+
+# Steps
+
+A layout to show a sequence of steps, with a progress bar and navigation.
+
+```md
+---
+layout: steps
+---
+
+# Title of the Steps
+
+::step{header="Header 1" value="1"}
+The content of step 1
+::
+
+::step{header="Header 2" value="2"}
+The content of step 2
+::
+
+::step{header="Header 3" value="3"}
+The content of step 3
+::
+```
+
+---
+
+# Title of the Steps
+
+<Stepper />
+
+---
+
+# Code
+
+This layout is for showing code snippets with syntax highlighting and line numbers, that executes the code in the browser and shows the output.
+
+```md
+---
+layout: code
+language: typescript
+---
+
+# Title of the Code
+
+::code::
+
+The initial content of the code block (can be edited)
+```
+
+---
+layout: code
+language: typescript
+---
+
+# Title of the Code
+
+::code::
+
+```ts {monaco-run} {autorun:false}
+function distance(x: number, y: number) {
+  return Math.sqrt(x ** 2 + y ** 2)
+}
+console.log(distance(3, 4))
+```
+
+---
+
+# Real-Time Plot
+
+---
+
+# Title of the Real-Time Plot
+
+<RealTimePlot />
+
+---
+layout: subsection
+---
+
+# Slidev Layouts
 
 ---
 layout: two-cols
