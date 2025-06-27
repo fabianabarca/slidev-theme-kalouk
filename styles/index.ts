@@ -3,3 +3,6 @@ import "./layout.css";
 
 // PrimeIcons
 import "primeicons/primeicons.css";
+
+// Catppuccin
+import "@catppuccin/palette/css/catppuccin.css";

@@ -31,6 +31,7 @@
     "screenshot": "slidev export example.md --format png"
   },
   "dependencies": {
+    "@catppuccin/palette": "^1.7.1",
     "@primeuix/themes": "^1.1.2",
     "@slidev/types": "^51.6.2",
     "chart.js": "^4.5.0",

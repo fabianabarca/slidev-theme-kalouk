@@ -1,12 +1,10 @@
 :root {
-  --slidev-theme-primary: #5d8392;
-  --kalouk-light-blue: #00c0f3;
-  --kalouk-blue: #005da4;
-  --kalouk-yellow: #ffe06a;
-  --kalouk-yellow-dark: #fdb912;
-  --kalouk-orange: #f37021;
-  --kalouk-green: #6dc067;
-  --kalouk-green-dark: #008641;
+  /* Updated with Catppuccin (Latte) colors */
+  --kalouk-light-blue: #04a5e5;
+  --kalouk-blue: #1e66f5;
+  --kalouk-yellow: #df8e1d;
+  --kalouk-orange: #fe640b;
+  --kalouk-green: #40a02b;
 }
 
 /* Kalouk Layouts */
@@ -34,8 +32,8 @@
 
 .slidev-layout.cover {
   @apply h-full grid;
-  background-color: var(--kalouk-blue);
-  color: white;
+  background-color: var(--ctp-latte-base);
+  color: var(--ctp-latte-text);
 
   h1 {
     @apply text-8xl font-800 leading-20;
