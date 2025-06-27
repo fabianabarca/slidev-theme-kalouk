@@ -47,6 +47,10 @@ html.dark .slidev-layout {
 
 /* Slidev Layouts (refined) */
 
+.slidev-layout.default {
+  @apply h-full grid;
+}
+
 .slidev-layout.cover {
   @apply h-full grid;
 

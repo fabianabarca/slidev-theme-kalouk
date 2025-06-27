@@ -1,5 +1,7 @@
 <template>
   <div class="slidev-layout default">
-    <slot />
+    <div class="my-auto max-w-2xl mx-auto">
+      <slot />
+    </div>
   </div>
 </template>
