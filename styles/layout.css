@@ -114,3 +114,19 @@ html.dark .slidev-layout {
     @apply mt-2;
   }
 }
+
+.slidev-layout.end {
+  @apply tracking-widest h-full text-center grid place-content-center select-none;
+
+  h1 + p {
+    @apply mt-2;
+  }
+
+  background-color: var(--ctp-latte-surface2);
+  color: var(--ctp-mocha-text);
+}
+
+html.dark .slidev-layout.end {
+  background-color: var(--ctp-mocha-surface2);
+  color: var(--ctp-mocha-text);
+}
