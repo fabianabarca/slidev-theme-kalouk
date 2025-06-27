@@ -1,6 +1,6 @@
 <template>
   <div class="slidev-layout fact">
-    <div class="my-auto">
+    <div class="my-auto max-w-xl mx-auto">
       <slot />
     </div>
   </div>

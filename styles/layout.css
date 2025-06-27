@@ -16,8 +16,12 @@
 }
 
 html.dark .slidev-layout {
-  background-color: var(--ctp-mocha-base);
+  background: var(--ctp-mocha-base);
   color: var(--ctp-mocha-text);
+}
+
+.slidev-code-wrapper {
+  @apply rounded border border-solid border-black dark:border-white;
 }
 
 /* Kalouk Layouts */
@@ -88,10 +92,10 @@ html.dark .slidev-layout {
 .slidev-layout.fact {
   @apply text-center grid h-full;
   h1 {
-    @apply text-8xl font-700;
+    @apply text-6xl font-700;
   }
   h1 + p {
-    @apply font-700 text-2xl;
+    @apply font-700 text-2xl mt-8;
   }
 }
 
