@@ -1,10 +1,23 @@
 :root {
   /* Updated with Catppuccin (Latte) colors */
-  --kalouk-light-blue: #04a5e5;
-  --kalouk-blue: #1e66f5;
-  --kalouk-yellow: #df8e1d;
-  --kalouk-orange: #fe640b;
-  --kalouk-green: #40a02b;
+  --kalouk-light-blue: var(--ctp-latte-sky);
+  --kalouk-blue: var(--ctp-latte-blue);
+  --kalouk-yellow: var(--ctp-latte-red);
+  --kalouk-orange: var(--ctp-latte-peach);
+  --kalouk-green: var(--ctp-latte-green);
+  --kalouk-red: var(--ctp-latte-red);
+}
+
+/* General */
+
+.slidev-layout {
+  background-color: var(--ctp-latte-base);
+  color: var(--ctp-latte-text);
+}
+
+html.dark .slidev-layout {
+  background-color: var(--ctp-mocha-base);
+  color: var(--ctp-mocha-text);
 }
 
 /* Kalouk Layouts */
@@ -32,11 +45,9 @@
 
 .slidev-layout.cover {
   @apply h-full grid;
-  background-color: var(--ctp-latte-base);
-  color: var(--ctp-latte-text);
 
   h1 {
-    @apply text-8xl font-800 leading-20;
+    @apply text-8xl font-900 leading-20;
   }
 
   h1 + p {
