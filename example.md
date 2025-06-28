@@ -93,6 +93,7 @@ Kalouk provides a set of layouts specially suited for teaching and learning, wit
 - Steps
 - Code
 - Plot
+- Process
 
 
 ---
@@ -160,7 +161,7 @@ Option B
 
 ---
 layout: quiz
-answer: B
+answer: C
 ---
 
 # Title of the Quiz
@@ -172,19 +173,11 @@ Statement of the quiz
 ::A::
 Option A
 
-$$
-x=y
-$$
-
 ::B::
 Option B
 
 ::C::
 Option C
-
----
-layout: form
----
 
 ---
 
