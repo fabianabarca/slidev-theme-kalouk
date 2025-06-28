@@ -71,16 +71,12 @@ layout: section
 # Layouts
 
 ---
-
-# Layouts
-
-Kalouk's layouts use the magic of Naive UI to enable new components and styles, like cards and grids.
-
+layout: fact 
 ---
 
-## Grid
+# The Secret Sauce
 
-Hola
+Kalouk's layouts use PrimeVue UI components to enable new styles and functionality.
 
 ---
 layout: subsection
@@ -103,7 +99,7 @@ Kalouk provides a set of layouts specially suited for teaching and learning, wit
 
 # Equation
 
-Showing an equation in its full glory with an extra big font. The definition of the variables is available through a special notation.
+Showing an equation in its full glory with an extra big font.
 
 ```md 
 ---
@@ -141,11 +137,12 @@ $E$ is the energy, $m$ is the mass, and $c$ is the speed of light.
 
 # Quiz
 
-Test your readers with a quiz.
+Test your readers with a quiz and up to four options to choose the right one.
 
 ```md
 ---
 layout: quiz
+answer: B
 ---
 
 # Title of the Quiz
@@ -154,15 +151,16 @@ layout: quiz
 
 Statement of the quiz
 
-::options::
+::A::
+Option A 
 
-- Option A
-- Option B [x]
-- Option C
+::B::
+Option B
 ```
 
 ---
 layout: quiz
+answer: B
 ---
 
 # Title of the Quiz
@@ -171,15 +169,22 @@ layout: quiz
 
 Statement of the quiz
 
+::A::
+Option A
+
 $$
-x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+x=y
 $$
 
-::options::
+::B::
+Option B
 
-- Option A
-- [x] Option B
-- Option C
+::C::
+Option C
+
+---
+layout: form
+---
 
 ---
 
@@ -256,8 +261,6 @@ console.log(distance(3, 4))
 
 # Title of the Real-Time Plot
 
-<RealTimePlot />
-
 ---
 layout: subsection
 ---
@@ -301,8 +304,7 @@ This shows on the right
 This shows at the bottom, aligned to the end (bottom) of the grid
 
 ---
-layout: center
-class: "text-center"
+layout: end
 ---
 
 # Learn More

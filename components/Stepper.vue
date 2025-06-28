@@ -2,20 +2,20 @@
   <div class="card flex justify-center">
     <Stepper value="1" class="basis-[50rem]">
       <StepList>
-        <Step value="1">Header 1</Step>
-        <Step value="2">Header 2</Step>
-        <Step value="3">Header 3</Step>
+        <Step value="1">Step 1</Step>
+        <Step value="2">Step 2</Step>
+        <Step value="3">Step 3</Step>
       </StepList>
       <StepPanels>
         <StepPanel v-slot="{ activateCallback }" value="1">
           <div class="flex flex-col h-48">
             <div
-              class="border-2 border-dashed border-surface-200 dark:border-surface-700 rounded bg-surface-50 dark:bg-surface-950 flex-auto flex justify-center items-center font-medium"
+              class="rounded flex-auto flex justify-center items-center font-medium"
             >
               The content of step 1
             </div>
           </div>
-          <div class="flex pt-6 justify-end">
+          <div class="flex p-4 justify-end">
             <Button
               label="Next"
               icon="pi pi-arrow-right"
@@ -27,12 +27,12 @@
         <StepPanel v-slot="{ activateCallback }" value="2">
           <div class="flex flex-col h-48">
             <div
-              class="border-2 border-dashed border-surface-200 dark:border-surface-700 rounded bg-surface-50 dark:bg-surface-950 flex-auto flex justify-center items-center font-medium"
+              class="rounded flex-auto flex justify-center items-center font-medium"
             >
               The content of step 2
             </div>
           </div>
-          <div class="flex pt-6 justify-between">
+          <div class="flex p-6 justify-between">
             <Button
               label="Back"
               severity="secondary"
@@ -50,12 +50,12 @@
         <StepPanel v-slot="{ activateCallback }" value="3">
           <div class="flex flex-col h-48">
             <div
-              class="border-2 border-dashed border-surface-200 dark:border-surface-700 rounded bg-surface-50 dark:bg-surface-950 flex-auto flex justify-center items-center font-medium"
+              class="rounded flex-auto flex justify-center items-center font-medium"
             >
               The content of step 3
             </div>
           </div>
-          <div class="pt-6">
+          <div class="p-6">
             <Button
               label="Back"
               severity="secondary"

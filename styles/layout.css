@@ -21,7 +21,11 @@ html.dark .slidev-layout {
 }
 
 .slidev-code-wrapper {
-  @apply rounded border border-solid border-black dark:border-white;
+  border: 2px solid var(--ctp-latte-surface2);
+}
+
+html.dark .slidev-code-wrapper {
+  border-color: var(--ctp-mocha-surface2);
 }
 
 /* Kalouk Layouts */
