@@ -1,5 +1,6 @@
 ---
 theme: ./
+transition: slide-left
 ---
 
 # Kalouk
@@ -88,13 +89,13 @@ layout: subsection
 
 Kalouk provides a set of layouts specially suited for teaching and learning, with a focus on math and programming.
 
-- Equations
-- Quizzes
+- Equation
+- Chart
+- Quiz
 - Steps
 - Code
-- Plot
 - Process
-
+- Exercise
 
 ---
 
@@ -133,6 +134,22 @@ $$
 ::bottom::
 
 $E$ is the energy, $m$ is the mass, and $c$ is the speed of light.
+
+---
+
+# Chart
+
+Good-looking charts with PrimeVue's Chart component.
+
+```md
+---
+layout: chart
+type: bar
+dataSource: https://sli.dev/data/chart.json
+---
+
+# Title of the Chart
+```
 
 ---
 
@@ -260,6 +277,8 @@ layout: subsection
 
 # Slidev Layouts
 
+*Kaloukified*
+
 ---
 layout: two-cols
 ---
@@ -295,6 +314,15 @@ This shows on the right
 ::bottom::
 
 This shows at the bottom, aligned to the end (bottom) of the grid
+
+---
+
+# Mermaid
+
+```mermaid
+flowchart TD
+  Start --> Stop
+```
 
 ---
 layout: end
