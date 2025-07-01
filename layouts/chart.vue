@@ -55,7 +55,7 @@ const setChartData = async () => {
 
   try {
     const response = await axios.get(
-      `http://127.0.0.1:8000/api/datasets/${props.dataset}`
+      `https://web.kalouk.xyz/api/datasets/${props.dataset}`
     );
     const apiData = response.data;
     let payload = apiData.payload;

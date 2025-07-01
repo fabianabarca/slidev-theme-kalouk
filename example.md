@@ -1,6 +1,8 @@
 ---
 theme: ./
 transition: slide-left
+addons:
+  - slidev-addon-python-runner
 ---
 
 # Kalouk
@@ -28,6 +30,22 @@ Read more about [Why Slidev?](https://sli.dev/guide/why)
 
 ---
 
+# What is Kalouk?
+
+Kalouk is a set of tools and environments designed for teachers and students using math and programming. The Kalouk theme includes the following features:
+
+- 📝 **New layouts** - equations, charts, step-by-step and more
+- 🧑‍💻 **Quizzing** - built-in quizzing utility to test your viewers knowledge
+- 🎨 **Catppuccin colors** - a pastel [theme](https://catppuccin.com/) for the high-spirited!
+
+<br>
+<br>
+
+Read more about [Kalouk](https://kalouk.xyz)
+
+
+---
+
 # Navigation
 
 Hover on the bottom-left corner to see the navigation's controls panel
@@ -41,29 +59,6 @@ Hover on the bottom-left corner to see the navigation's controls panel
 | <kbd>up</kbd> | previous slide |
 | <kbd>down</kbd> | next slide |
 
----
-layout: image-right
-image: https://cover.sli.dev
----
-
-# Code
-
-Use code snippets and get the highlighting directly!
-
-```ts
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: Partial<User>) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
 
 ---
 layout: section
@@ -86,16 +81,115 @@ layout: subsection
 # Kalouk Layouts
 
 ---
+layout: grid
+---
 
-Kalouk provides a set of layouts specially suited for teaching and learning, with a focus on math and programming.
+Kalouk provides a set of layouts specially suited for teaching and learning, with a focus on mathematics and programming for data analysis.
 
-- Equation
-- Chart
-- Quiz
-- Steps
-- Code
-- Process
-- Exercise
+::A::
+Grid
+
+::B::
+Equation
+
+::C::
+Chart
+
+::D::
+Quiz
+
+::E::
+Steps
+
+::F::
+Code
+
+::G::
+Process
+
+::H::
+Exercise
+
+::I::
+Jupyter
+
+::bottom::
+
+Find out more in the next slides!
+
+---
+
+# Grid
+
+A practical layout to show important elements with up to nine cards.
+
+```md
+---
+layout: grid
+---
+
+# Title of the Grid
+
+::A::
+Content A
+
+::B::
+Content B
+
+(...C, D, E, F, G, H...)
+
+::I::
+Content I
+
+::bottom::
+Further explanation, if required
+```
+
+---
+layout: grid
+---
+
+# Title of the Grid
+
+::A::
+
+A
+
+::B::
+
+B
+
+::C::
+
+C
+
+::D::
+
+D
+
+::E::
+
+E
+
+::F::
+
+F
+
+::G::
+
+G
+
+::H::
+
+H
+
+::I::
+
+I
+
+::bottom::
+
+Further explanation, if required
 
 ---
 
@@ -139,16 +233,20 @@ $E$ is the energy, $m$ is the mass, and $c$ is the speed of light.
 
 # Chart
 
-Good-looking charts with PrimeVue's Chart component.
+Good-looking charts with PrimeVue's Chart.js-powered component, with data from Kalouk API or any other Schema.org's Dataset type-compliant source.
 
 ```md
 ---
 layout: chart
-type: bar
-dataSource: https://sli.dev/data/chart.json
+dataset: ingresos-semanales
+type: line
 ---
 
 # Title of the Chart
+
+::bottom::
+
+Footer content
 ```
 
 ---
@@ -167,7 +265,7 @@ Footer content
 
 # Quiz
 
-Test your readers with a quiz and up to four options to choose the right one.
+Test your readers with a quiz with up to four options to choose from.
 
 ```md
 ---
@@ -190,7 +288,7 @@ Option B
 
 ---
 layout: quiz
-answer: C
+answer: B
 ---
 
 # Title of the Quiz
@@ -249,39 +347,35 @@ This layout is for showing code snippets with syntax highlighting and line numbe
 ```md
 ---
 layout: code
-language: typescript
 ---
 
 # Title of the Code
 
-::code::
+'''py {monaco-run}
+from termcolor import colored
 
-The initial content of the code block (can be edited)
+print(colored("Hello, Slidev!", "blue"))
+'''
 ```
 
----
-layout: code
-language: typescript
 ---
 
 # Title of the Code
 
-::code::
+```py {monaco-run}
+from termcolor import colored
 
-```ts {monaco-run} {autorun:false}
-function distance(x: number, y: number) {
-  return Math.sqrt(x ** 2 + y ** 2)
-}
-console.log(distance(3, 4))
+print(colored("Hello, Slidev!", "blue"))
 ```
 
 ---
 
-# Real-Time Plot
+# Jupyter Lite
 
 ---
-
-# Title of the Real-Time Plot
+layout: iframe
+url: https://jupyter.org/try-jupyter/lab/
+---
 
 ---
 layout: subsection
@@ -337,6 +431,15 @@ flowchart TD
 
   e1@{ animate: true }
 ```
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+# Side image (right or left)
+
+So many things to say here.
 
 ---
 layout: end
