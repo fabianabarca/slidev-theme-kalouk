@@ -28,7 +28,7 @@ const props = defineProps({
     <div class="row-header">
       <slot />
     </div>
-    <div class="row-equation mr-2" :class="props.class">
+    <div class="row-equation" :class="props.class">
       <slot name="equation" />
     </div>
     <div class="row-bottom text-center" :class="props.class">
