@@ -152,6 +152,18 @@ dataSource: https://sli.dev/data/chart.json
 ```
 
 ---
+layout: chart
+dataset: ingresos-semanales
+type: line
+---
+
+# Title of the Chart
+
+::bottom::
+
+Footer content
+
+---
 
 # Quiz
 
@@ -321,7 +333,9 @@ This shows at the bottom, aligned to the end (bottom) of the grid
 
 ```mermaid
 flowchart TD
-  Start --> Stop
+  Start e1@--> Stop
+
+  e1@{ animate: true }
 ```
 
 ---
