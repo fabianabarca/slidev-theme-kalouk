@@ -3,6 +3,8 @@ theme: ./
 transition: slide-left
 addons:
   - slidev-addon-python-runner
+
+image: K.png
 ---
 
 # Kalouk
@@ -153,11 +155,11 @@ layout: grid
 
 ::A::
 
-A
+En un lugar 
 
 ::B::
 
-B
+de La Mancha
 
 ::C::
 
@@ -297,8 +299,12 @@ answer: B
 
 Statement of the quiz
 
+$$
+x= 3 +z
+$$
+
 ::A::
-Option A
+$x = 2y$
 
 ::B::
 Option B
@@ -372,8 +378,17 @@ print(colored("Hello, Slidev!", "blue"))
 
 # Jupyter Lite
 
+Jupyter Lite notebooks, executed in the browser with WebAssembly.
+
+```md
 ---
-layout: iframe
+layout: jupyter
+url: https://jupyter.org/try-jupyter/lab/
+---
+```
+
+---
+layout: jupyter
 url: https://jupyter.org/try-jupyter/lab/
 ---
 
