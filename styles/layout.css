@@ -102,7 +102,7 @@ html.dark .slidev-code-wrapper {
   h1 {
     @apply text-6xl font-700;
   }
-  h1 + p {
+  p {
     @apply font-700 text-2xl mt-8;
   }
 }
