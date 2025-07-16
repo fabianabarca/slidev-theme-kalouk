@@ -1,6 +1,6 @@
 {
   "name": "slidev-theme-kalouk",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "type": "module",
   "description": "Kalouk theme for Slidev",
   "homepage": "https://github.com/fabianabarca/kalouk",
@@ -52,7 +52,7 @@
     "colorSchema": "both",
     "defaults": {
       "fonts": {
-        "sans": "Open Sans",
+        "sans": "Inter",
         "serif": "Noto Serif",
         "mono": "Inconsolata"
       },
