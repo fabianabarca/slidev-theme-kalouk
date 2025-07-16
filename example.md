@@ -1,15 +1,12 @@
 ---
 theme: ./
 transition: slide-left
-addons:
-  - slidev-addon-python-runner
-
 image: K.png
 ---
 
 # Kalouk
 
-Presentation slides with some niceties for math and programming
+Modern presentation slides with elegant support for mathematics and interactive programming
 
 ---
 
@@ -17,7 +14,7 @@ Presentation slides with some niceties for math and programming
 
 Slidev is a slide maker and presentation tool designed for developers. It includes the following features:
 
-- 📝 **Text-based** - focus on your content with Markdown, then style it later
+- 📝 **Text-based** - focus on your content with Markdown, and style it later
 - 🎨 **Themable** - themes can be shared and reused as npm packages
 - 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
 - 🤹 **Interactive** - embed Vue components to enhance your expressions
@@ -34,7 +31,7 @@ Read more about [Why Slidev?](https://sli.dev/guide/why)
 
 # What is Kalouk?
 
-Kalouk is a set of tools and environments designed for teachers and students using math and programming. The Kalouk theme includes the following features:
+Kalouk is a set of tools and environments designed for teachers and students using mathematics and programming. The Kalouk theme includes the following features:
 
 - 📝 **New layouts** - equations, charts, step-by-step and more
 - 🧑‍💻 **Quizzing** - built-in quizzing utility to test your viewers knowledge
@@ -155,11 +152,11 @@ layout: grid
 
 ::A::
 
-En un lugar 
+A 
 
 ::B::
 
-de La Mancha
+B
 
 ::C::
 
@@ -300,11 +297,11 @@ answer: B
 Statement of the quiz
 
 $$
-x= 3 +z
+x = y
 $$
 
 ::A::
-$x = 2y$
+Option A
 
 ::B::
 Option B
@@ -343,36 +340,6 @@ The content of step 3
 # Title of the Steps
 
 <Stepper />
-
----
-
-# Code
-
-This layout is for showing code snippets with syntax highlighting and line numbers, that executes the code in the browser and shows the output.
-
-```md
----
-layout: code
----
-
-# Title of the Code
-
-'''py {monaco-run}
-from termcolor import colored
-
-print(colored("Hello, Slidev!", "blue"))
-'''
-```
-
----
-
-# Title of the Code
-
-```py {monaco-run}
-from termcolor import colored
-
-print(colored("Hello, Slidev!", "blue"))
-```
 
 ---
 
