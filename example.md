@@ -2,6 +2,7 @@
 theme: ./
 transition: slide-left
 image: K.png
+width: 200
 ---
 
 # Kalouk

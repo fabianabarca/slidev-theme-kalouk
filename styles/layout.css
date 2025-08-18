@@ -63,7 +63,7 @@ html.dark .slidev-code-wrapper {
   }
 
   h1 + p {
-    @apply -mt-2 opacity-50 mb-4;
+    @apply -mt-2 opacity-50 text-2xl mb-4;
   }
 
   p + h2,
@@ -93,7 +93,7 @@ html.dark .slidev-code-wrapper {
 
 .slidev-layout.section {
   h1 {
-    @apply text-8xl font-800 leading-20;
+    @apply text-6xl font-800 leading-20;
   }
 }
 
